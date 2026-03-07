@@ -1,0 +1,35 @@
+START PROGRAM
+
+LOAD tasks from file
+
+WHILE program is running
+
+    DISPLAY menu
+
+    INPUT user choice
+
+    IF choice = 1
+        INPUT task name
+        INPUT due date
+        INPUT priority
+        SET task status = incomplete
+        ADD task to list
+
+    ELSE IF choice = 2
+        DISPLAY all tasks
+
+    ELSE IF choice = 3
+        INPUT task number
+        MARK task as completed
+
+    ELSE IF choice = 4
+        INPUT task number
+        DELETE task
+
+    ELSE IF choice = 5
+        SAVE tasks to file
+        EXIT program
+
+END WHILE
+
+END PROGRAM
